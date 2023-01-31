@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>innerpage</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -18,11 +17,11 @@
         .my-dropdown-toggle::after {
             content: none;
         }
-
+        
         #specifyColor {
-            accent-color: red;
+            accent-color: #C8242F;
         }
-
+        
         input[type="checkbox"] {
             accent-color: #C8242F;
         }
@@ -35,14 +34,12 @@
     <nav class="navbar navbar-expand-lg " style="background-color: white;">
         <div class="container-fluid">
 
-            <a href="#"><img src="./image/menu-bar.svg" class="me-2"></a>
+            <a class="toggalbtn" href="#"><img src="./image/menu-bar.svg" class="me-2"></a>
 
 
             <img src="./image/header-logo.svg" class="me-5">
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon">
                 </span>
 
@@ -52,8 +49,7 @@
                     <form class="d-flex ms-3" role="search">
                         <i class="bi bi-search my-auto"></i>
 
-                        <input class="form-control me-2 ms-2 border-0 " style="width: 60vw; background-color: white;"
-                            type="search" placeholder="Search" aria-label="Search">
+                        <input class="form-control me-2 ms-2 border-0 " style="width: 60vw; background-color: white;" type="search" placeholder="Search" aria-label="Search">
 
                     </form>
                 </ul>
@@ -63,8 +59,7 @@
 
 
                     <div class="dropdown-center my-auto">
-                        <a class="nav-link dropdown-toggle  ms-3 me-5" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                        <a class="nav-link dropdown-toggle  ms-3 me-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             John Doe
                         </a>
 
@@ -82,20 +77,18 @@
 
 
     <div class="row container-fluid ">
-        <div class="col-lg-2 d-none d-lg-block d-xl-block d-xxl-block ">
+        <div class="col-lg-2 d-none d-lg-block d-xl-block d-xxl-block " id="sidebarxyz">
             <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
                 <div class="position-sticky">
-                    <div class="list-group list-group-flush mx-3 mt-4" style="height: 1580px;">
-                        <a href="#" class="list-group-item list-group-item-action py-2 ripple mb-2 border-0"
-                            aria-current="true">
+                    <div class="list-group list-group-flush mx-3 mt-4" style="height: 1630px;">
+                        <a href="#" class="list-group-item list-group-item-action py-2 ripple mb-2 border-0" aria-current="true">
 
 
                             <a href="#" class="list-group-item list-group-item-action py-2 ripple  mb-3 border-0">
                                 <img src="image/dashboard-default.svg" style="height: 15px; width: 15px;">
                                 <i class="fas fa-chart-area fa-fw me-3"></i><span>Dashboard </span>
                             </a>
-                            <a href="#" class="list-group-item list-group-item-action py-2 ripple mb-3 border-0"
-                                style="background-color: #FFF3F4;">
+                            <a href="#" class="list-group-item list-group-item-action py-2 ripple mb-3 border-0" style="background-color: #FFF3F4;">
                                 <img src="image/graph-active.svg" style="height: 15px; width: 15px;">
                                 <span class="ms-3" style="color: #C8242F;"> Analysis</span></a>
                             <a href="#" class="list-group-item list-group-item-action py-2 ripple mb-3 border-0">
@@ -105,14 +98,11 @@
                                 <img src="image/clock-default.svg" style="height: 15px; width: 15px;">
                                 <i class="fas fa-chart-pie fa-fw me-3"></i><span>History</span>
                             </a>
-                            <a href="#" class="list-group-item list-group-item-action py-2 ripple mb-3 border-0"><img
-                                    src="image/user-default.svg" style="height: 15px; width: 15px;">
+                            <a href="#" class="list-group-item list-group-item-action py-2 ripple mb-3 border-0"><img src="image/user-default.svg" style="height: 15px; width: 15px;">
                                 <i class="fas fa-chart-bar fa-fw me-3"></i><span>Users</span></a>
-                            <a href="#" class="list-group-item list-group-item-action py-2 ripple mb-3 border-0"><img
-                                    src="image/maintenance-default.svg" style="height: 15px; width: 15px;">
+                            <a href="#" class="list-group-item list-group-item-action py-2 ripple mb-3 border-0"><img src="image/maintenance-default.svg" style="height: 15px; width: 15px;">
                                 <span class="ms-3">Maintenance</span></a>
-                            <a href="#" class="list-group-item list-group-item-action py-2 ripple mb-3 border-0"><img
-                                    src="image/setting-default.svg" style="height: 15px; width: 15px;">
+                            <a href="#" class="list-group-item list-group-item-action py-2 ripple mb-3 border-0"><img src="image/setting-default.svg" style="height: 15px; width: 15px;">
                                 <span class="ms-3">Setting</span></a>
 
                     </div>
@@ -121,9 +111,11 @@
             <!-- Sidebar -->
         </div>
 
-        <div class="col-lg-10 px-5">
+        <div class="col-lg-10 px-5" id="mainContent">
             <h2 class="my-5 ms-3">Analysis</h2>
+
             <div class="row">
+
                 <div class="col-11 mt-0 ms-2" style="background-color: white;">
                     <div class="col-11 mt-4 ">
                         <h4 class="ms-2">One Column</h4>
@@ -131,10 +123,9 @@
                             <div class="form-row">
                                 <div class="form-group col-md-12 mt-3">
 
-                                    <input type="text" class="form-control" id="inputEmail4" placeholder="Name">
+                                    <input type="text" class="form-control" id="inputEmail4" placeholder="Name" required>
                                 </div>
-                                <select class="selectpicker form-control show-menu-arrow mt-3 w-100"
-                                    title="Choose one of the following...">
+                                <select class="selectpicker form-control show-menu-arrow mt-3 w-100" title="Choose one of the following...">
                                     <option>Dropdown </option>
                                     <option>option1</option>
                                     <option>option2</option>
@@ -147,8 +138,7 @@
 
                             <div class="form-group  mt-3">
 
-                                <textarea class="form-control" id="w3review" name="w3review" rows="5" cols="170"
-                                    placeholder="Multiple line"></textarea>
+                                <textarea class="form-control" id="w3review" name="w3review" rows="5" cols="170" placeholder="Multiple line"></textarea>
 
                             </div>
                             <div class="col-12 mt-0 ms-2" style="background-color: white;">
@@ -158,20 +148,16 @@
                                     <div class="form-group mt-3">
                                         <div class="row">
                                             <div class="col-lg-6 col-sm-12">
-                                                <input type="text" class="form-control mt-3" id="inputCity"
-                                                    placeholder="Name"></div>
+                                                <input type="text" class="form-control mt-3" id="inputCity" placeholder="Name"></div>
                                             <div class="col-lg-6 col-sm-12">
 
-                                                <input type="text" class="form-control mt-3" id="inputCity "
-                                                    placeholder="User Name"></div>
+                                                <input type="text" class="form-control mt-3" id="inputCity " placeholder="User Name"></div>
                                             <div class="w-100"></div>
                                             <div class="col-lg-6 col-sm-12">
 
-                                                <input type="text" class="form-control mt-3" id="inputCity"
-                                                    placeholder="Password"></div>
+                                                <input type="text" class="form-control mt-3" id="inputCity" placeholder="Password"></div>
                                             <div class="col-lg-6 col-sm-12">
-                                                <select class="selectpicker form-control show-menu-arrow mt-3 w-100"
-                                                    title="Choose one of the following...">
+                                                <select class="selectpicker form-control show-menu-arrow mt-3 w-100" title="Choose one of the following...">
                                                     <option>Dropdown </option>
                                                     <option>option1</option>
                                                     <option>option2</option>
@@ -186,15 +172,16 @@
                                         </div>
                                         <h4 class="ms-1 mt-3">Three Column</h4>
                                         <div class="form-group row mt-3">
+                                            <div class=" was-validated col-lg-4 col-sm-12">
+                                                <input type="text" class="form-control mt-3" id="inputCity" placeholder="Focus" aria-describedby="validationServer03Feedback" required>
+                                                <div id="validationServer03Feedback" class="invalid-feedback">
+                                                    Enter valid data
+                                                </div>
+                                            </div>
                                             <div class="col-lg-4 col-sm-12">
-                                                <input type="text" class="form-control mt-3" id="inputCity"
-                                                    placeholder="Focus"></div>
+                                                <input type="password" class="form-control mt-3" id="inputCity" placeholder="Password"></div>
                                             <div class="col-lg-4 col-sm-12">
-                                                <input type="password" class="form-control mt-3" id="inputCity"
-                                                    placeholder="Password"></div>
-                                            <div class="col-lg-4 col-sm-12">
-                                                <input type="text" disabled class="form-control mt-3" id="inputCity"
-                                                    placeholder="Disabled"></div>
+                                                <input type="text" disabled class="form-control mt-3" id="inputCity" placeholder="johndoe" style="border-style: dashed "></div>
                                         </div>
 
 
@@ -205,18 +192,24 @@
                                         <h4 class="ms-1 mt-3">Four Column</h4>
 
                                         <div class="form-group row mt-3">
+                                            <div class="was-validated col-lg-3 col-sm-12">
+
+                                                <input type="text" class="  form-control mt-3" id="validationServer03" placeholder="UI Designer" aria-describedby="validationServer03Feedback" aria-placeholder="focus" required>
+
+                                                <div id="validationServer03Feedback" class="invalid-feedback">
+                                                    Enter valid data
+                                                </div>
+                                            </div>
+                                            <div class="was-validated col-lg-3 col-sm-12">
+                                                <input type="text" class="form-control mt-3" id="validationServer03" aria-describedby="validationServer03Feedback" placeholder="Name" required style="border-color: #ADADAD;">
+                                                <div style="color: #ADADAD; " id="validationServer03Feedback" class="invalid-feedback">
+                                                    Enter your full Name as per ID
+                                                </div>
+                                            </div>
                                             <div class="col-lg-3 col-sm-12">
-                                                <input type="text" class="form-control mt-3" id="inputCity"
-                                                    placeholder="UI Designer"></div>
+                                                <input type="text" class="form-control mt-3" id="inputCity" placeholder="User Name"></div>
                                             <div class="col-lg-3 col-sm-12">
-                                                <input type="password" class="form-control mt-3" id="inputCity"
-                                                    placeholder="Name"></div>
-                                            <div class="col-lg-3 col-sm-12">
-                                                <input type="text" class="form-control mt-3" id="inputCity"
-                                                    placeholder="User Name"></div>
-                                            <div class="col-lg-3 col-sm-12">
-                                                <input type="text" class="form-control mt-3" id="inputCity"
-                                                    placeholder="Name"></div>
+                                                <input type="text" class="form-control mt-3" id="inputCity" placeholder="Name"></div>
                                         </div>
                                         <h4 class="ms-1 mt-3">Other Design Element</h4>
                                         <h5 class="mt-3 ms-1">File Upload</h5>
@@ -242,7 +235,7 @@
                                             <input type="checkbox" class="ms-0" value="">&MediumSpace; Option 1
                                         </label>
                                         <label class="checkbox-inline">
-                                            <input type="checkbox" class="ms-3" value="">&MediumSpace; Option 2
+                                            <input type="checkbox" class="ms-3" value="" checked>&MediumSpace; Option 2
                                         </label>
 
                                         <h5 class="ms-1 mt-2 ">Snackbar</h5>
@@ -251,38 +244,32 @@
                                             <div class="row">
 
                                                 <div class="col-lg-6 col-sm-12">
-                                                    <button type="button" style="text-align: left;"
-                                                        class="btn btn-outline-danger form-control mt-3"> <i
-                                                            class="fa fa-info-circle" aria-hidden="false"></i> This is
+                                                    <button type="button" style="text-align: left;" class="btn btn-outline-danger form-control mt-3"> <i
+                                                            class="fa fa-exclamation-circle" aria-hidden="false"></i>
+                                                        This is
                                                         an
                                                         error message</button></div>
 
                                                 <div class="col-lg-6 col-sm-12">
-                                                    <button type="button" style="text-align: left;"
-                                                        class="btn btn-outline-info form-control mt-3"> <i
+                                                    <button type="button" style="text-align: left;" class="btn btn-outline-info form-control mt-3"> <i
                                                             class="fa fa-info-circle" aria-hidden="false"></i> This
                                                         is an information message</button></div>
 
                                                 <div class="col-lg-6 col-sm-12">
-                                                    <button type="button"
-                                                        class="btn btn-outline-warning  form-control mt-3"
-                                                        style="text-align: left;"><i class="fa fa-exclamation-triangle"
+                                                    <button type="button" class="btn btn-outline-warning  form-control mt-3" style="text-align: left;"><i class="fa fa-exclamation-triangle"
                                                             aria-hidden="true"></i> This is an warning
                                                         message</button></div>
 
                                                 <div class="col-lg-6 col-sm-12">
-                                                    <button type="button" style="text-align: left;"
-                                                        class="btn btn-outline-success form-control mt-3"><i
+                                                    <button type="button" style="text-align: left;" class="btn btn-outline-success form-control mt-3"><i
                                                             class='fa fa-check-circle' style='color:#32c34f'></i> This
                                                         is an successs message</button></div>
 
 
                                                 <h5 class="ms-1 mt-3 mb-2">Call to action</h5>
 
-                                                <button type="button" class="btn btn-danger me-3 ms-3 mt-1"
-                                                    style="border-radius: 23px; width: 123px;">Primary</button>
-                                                <button type="button" class="btn btn-outline-danger me-3 ms-3 mt-1"
-                                                    style="border-radius: 23px; width: 123px;">Secondary</button>
+                                                <button type="button" class="btn btn-danger me-3 ms-3 mt-1" style="border-radius: 23px; width: 123px;">Primary</button>
+                                                <button type="button" class="btn btn-outline-danger me-3 ms-3 mt-1" style="border-radius: 23px; width: 123px;">Secondary</button>
 
 
                                                 <h5 class="ms-1 mt-3 mb-2">Tabs</h5>
@@ -305,44 +292,33 @@
 
                                                     </ul>
                                                 </div>
-                                                <div class="row ms-3 mb-5"
-                                                    style="height: 3px; width: 80vw;background-color: #ADADAD;transform: translateY(-23px);opacity: 25%;">
+                                                <div class="row ms-3 mb-5" style="height: 3px; width: 80vw;background-color: #ADADAD;transform: translateY(-23px);opacity: 25%;">
                                                 </div>
-                                                <div class="row mt-0 ms-3" style="transform: translateY(-50px);">Lorem
-                                                    Ipsum is simply dummy text of the printing and typesetting industry.
-                                                    Lorem Ipsum has been the industry's standard dummy text ever since
-                                                    the 1500s, when an unknown printer took a galley of type and
-                                                    scrambled it to make a type specimen book. It has survived not only
-                                                    five centuries, but also the leap into electronic typesetting,
-                                                    remaining essentially unchanged. It was popularised in the 1960s
-                                                    with the release of Letraset sheets containing</div>
-                                                
-                                                
+                                                <div class="row mt-0 ms-3" style="transform: translateY(-50px);">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                                                    scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+                                                    the release of Letraset sheets containing</div>
+
+
 
                         </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
 
 
 
-    </div>
+                        </div>
 
 
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-        crossorigin="anonymous"></script>
+                        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
-        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
-        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
-        crossorigin="anonymous"></script>
-    <script src="./js/custome.js"></script>
+                        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+                        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+                        <script src="./js/custom.js"></script>
 </body>
 
 </html>
